@@ -1,0 +1,9 @@
+.container {
+    max-width: 1136px;
+    padding: 0 30px;
+    margin: 0 auto;
+
+    @media (max-width: $sm) {
+        padding: 0 16px;
+    }
+}
