@@ -1,2 +1,14 @@
 .header {
+    &__inner {
+        position: relative;
+
+        padding: 40px;
+
+        @media (max-width: $md) {
+            padding: 24px;
+        }
+        @media (max-width: $sm) {
+            padding: 32px;
+        }
+    }
 }

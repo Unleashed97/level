@@ -354,6 +354,7 @@ body {
   font-family: Segoe UI, sans-serif;
   font-size: 1.6rem;
   line-height: 1.7;
+  color: #ffffff;
 }
 
 ul {
@@ -377,6 +378,21 @@ p {
   margin: 0;
 }
 
+.header__inner {
+  position: relative;
+  padding: 40px;
+}
+@media (max-width: 834px) {
+  .header__inner {
+    padding: 24px;
+  }
+}
+@media (max-width: 376px) {
+  .header__inner {
+    padding: 32px;
+  }
+}
+
 .container {
   max-width: 1136px;
   padding: 0 30px;
@@ -385,5 +401,32 @@ p {
 @media (max-width: 376px) {
   .container {
     padding: 0 16px;
+  }
+}
+
+.nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.nav__list {
+  display: flex;
+  gap: 32px;
+  color: #ffffff;
+}
+
+.logo {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-family: Inter, sans-serif;
+  font-weight: 700;
+  font-size: 4rem;
+  color: #ffffff;
+}
+@media (max-width: 376px) {
+  .logo {
+    font-size: 2rem;
   }
 }

@@ -21,6 +21,7 @@ body {
     font-family: $family;
     font-size: 1.6rem;
     line-height: 1.7;
+    color: $colors-text-primary;
 }
 
 ul {
@@ -49,3 +50,4 @@ p {
 @import 'components/footer.scss';
 @import 'components/container.scss';
 @import 'components/nav.scss';
+@import 'components/logo.scss';
