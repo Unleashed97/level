@@ -3,6 +3,10 @@
     padding: 0 30px;
     margin: 0 auto;
 
+    &--sm {
+        max-width: 848px;
+    }
+
     @media (max-width: $sm) {
         padding: 0 16px;
     }

@@ -405,6 +405,9 @@ p {
   padding: 0 30px;
   margin: 0 auto;
 }
+.container--sm {
+  max-width: 848px;
+}
 @media (max-width: 376px) {
   .container {
     padding: 0 16px;
@@ -496,18 +499,70 @@ p {
   height: 1px;
   background-color: rgba(255, 255, 255, 0.4);
 }
+.section--about {
+  padding-bottom: 88px;
+  background-color: #161519;
+}
+.section--about .section__cuisine {
+  margin-bottom: 88px;
+}
+.section--about .section__interior-image {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  margin-bottom: 88px;
+}
+.section--about-restaurant {
+  transform: translateY(-53px);
+  margin-bottom: 35px;
+}
+.section--about-restaurant .section__inner {
+  display: flex;
+  align-items: center;
+  min-height: 356px;
+}
+.section--about-restaurant .section__text-block {
+  position: relative;
+  padding: 46px 101px 46px 64px;
+  background-color: #ffffff;
+}
+.section--about-restaurant .section__title {
+  margin-bottom: 0;
+  font-family: Allura, cursive;
+  font-size: 8rem;
+  font-weight: 400;
+  color: #b98c67;
+}
+.section--about-restaurant .section__text {
+  margin-bottom: 32px;
+  color: #111013;
+}
+.section--about-restaurant .section__reserve {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  color: #b98c67;
+}
+.section--about-restaurant .decor {
+  position: absolute;
+  bottom: -55px;
+  right: -50px;
+  transform: rotate(30deg);
+}
 .section__title {
   margin-bottom: 40px;
   font-family: Inter, sans-serif;
   font-weight: 700;
   line-height: normal;
   letter-spacing: 0;
-  text-transform: uppercase;
   font-size: 4.8rem;
 }
 .section__text {
   font-size: 1.6rem;
   line-height: 1.7;
+}
+.section__text + .section__text {
+  margin-top: 24px;
 }
 
 .btn {
