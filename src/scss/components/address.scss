@@ -6,12 +6,18 @@
         display: block;
         margin-bottom: 8px;
 
+        @media (max-width: $lg) {
+            font-size: 1.4rem;
+        }
+
         &:last-child {
             margin-bottom: 40px;
         }
 
         &.link {
             position: relative;
+
+            display: inline-block;
 
             &::after {
                 content: '';
@@ -24,6 +30,10 @@
                 height: 1px;
 
                 background-color: rgba($colors-text-primary, 0.6);
+
+                @media (max-width: $sm) {
+                    display: none;
+                }
             }
         }
     }

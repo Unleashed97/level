@@ -1,11 +1,11 @@
 .section {
     &--showcase-main {
         background-image: url('../img/section/showcase/main/bg.jpg');
-        background-size: cover;
-        background-position: center;
-        background-repeat: no-repeat;
-
+    }
+    &--showcase {
         .section__inner {
+            position: relative;
+
             min-height: 950px;
 
             display: flex;
@@ -22,21 +22,40 @@
 
         .section__btn {
             margin-top: 48px;
+
+            @media (max-width: $sm) {
+                margin-bottom: 32px;
+                width: 100%;
+            }
         }
 
         .socials {
-            transform: translateX(45%) rotate(-90deg);
-            transform-origin: center;
-
+            position: absolute;
+            right: 15px;
+            top: 35%;
+            transform: translateY(-100%) rotate(-90deg);
+            transform-origin: right center;
             &__item {
                 transform: rotate(90deg);
+            }
+
+            @media (max-width: $lg) {
+                display: none;
             }
         }
 
         .section__title {
             margin-bottom: 24px;
-
+            text-transform: uppercase;
             font-size: 6.4rem;
+
+            @media (max-width: $lg) {
+                font-size: 4.8rem;
+            }
+
+            @media (max-width: $sm) {
+                font-size: 3rem;
+            }
         }
 
         .section__text {
@@ -74,15 +93,32 @@
 
         background-color: $colors-primary;
 
+        @media (max-width: $lg) {
+            padding-bottom: 80px;
+        }
+
+        @media (max-width: $sm) {
+            padding-bottom: 48px;
+        }
+
         .section__cuisine {
             margin-bottom: 88px;
+
+            @media (max-width: $lg) {
+                margin-bottom: 48px;
+            }
         }
 
         .section__interior-image {
             display: block;
             max-width: 100%;
             height: auto;
+
             margin-bottom: 88px;
+
+            @media (max-width: $lg) {
+                margin-bottom: 48px;
+            }
         }
     }
 
@@ -91,14 +127,41 @@
 
         margin-bottom: calc(88px - 53px);
 
-        .section__inner {
-            display: flex;
-            align-items: center;
+        @media (max-width: $lg) {
+            transform: translateY(-48px);
 
+            margin-bottom: 0;
+        }
+        @media (max-width: $sm) {
+            transform: translateY(-24px);
+
+            margin-bottom: calc(48px - 24px);
+        }
+
+        .section__inner {
             min-height: 356px;
+
+            display: grid;
+            grid-template-columns: 31% 69%;
+
+            @media (max-width: $md) {
+                flex-direction: column;
+            }
+            @media (max-width: $sm) {
+                grid-template-rows: minmax(300px, 1fr);
+                grid-template-columns: 1fr;
+            }
+        }
+
+        .section__picture {
+            width: 100%;
+            height: 100%;
         }
 
         .section__image {
+            display: block;
+            width: 100%;
+            height: 100%;
         }
 
         .section__text-block {
@@ -107,6 +170,13 @@
             padding: 46px 101px 46px 64px;
 
             background-color: $colors-secondary;
+
+            @media (max-width: $lg) {
+                padding: 46px 56px 46px 64px;
+            }
+            @media (max-width: $md) {
+                padding: 24px 24px 40px;
+            }
         }
 
         .section__title {
@@ -116,6 +186,17 @@
             font-size: 8rem;
             font-weight: 400;
             color: #b98c67;
+
+            @media (max-width: $lg) {
+                font-size: 6.4rem;
+            }
+
+            @media (max-width: $md) {
+                font-size: 5rem;
+            }
+            @media (max-width: $sm) {
+                font-size: 4.8rem;
+            }
         }
 
         .section__text {
@@ -138,6 +219,11 @@
             right: -50px;
 
             transform: rotate(30deg);
+
+            @media (max-width: $sm) {
+                bottom: -27px;
+                right: -17px;
+            }
         }
     }
 
@@ -149,6 +235,16 @@
         line-height: normal;
         letter-spacing: 0;
         font-size: 4.8rem;
+
+        @media (max-width: $lg) {
+            font-size: 3.2rem;
+        }
+
+        @media (max-width: $sm) {
+            margin-bottom: 32px;
+
+            font-size: 2.4rem;
+        }
     }
 
     &__text {
@@ -157,6 +253,10 @@
 
         & + & {
             margin-top: 24px;
+        }
+
+        @media (max-width: $sm) {
+            font-size: 1.4rem;
         }
     }
 }

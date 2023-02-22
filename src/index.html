@@ -12,9 +12,8 @@
 
     <!-- main -->
     <main>
-
         <!-- section showcase -->
-        <section class="section section--showcase-main">
+        <section class="section section--showcase section--showcase-main">
             <div class="container">
                 <div class="section__inner">
                     <div class="section__text-block">
@@ -74,7 +73,11 @@
             <section class="section section--about-restaurant">
                 <div class="container">
                     <div class="section__inner">
-                        <picture>
+                        <picture class="section__picture">
+                            <source srcset="img/section/about/cocktail-sm.webp" media="(max-width: 576px)">
+                            <source srcset="img/section/about/cocktail-sm.jpg" media="(max-width: 576px)">
+                            <source srcset="img/section/about/cocktail-md.webp" media="(max-width: 880px)">
+                            <source srcset="img/section/about/cocktail-md.jpg" media="(max-width: 880px)">
                             <source srcset="img/section/about/cocktail.webp">
                             <img src="img/section/about/cocktail.jpg" class="section__image" alt="коктейль">
                         </picture>
@@ -93,7 +96,9 @@
                             </a>
 
                             <picture>
-                                <source src="img/section/about/decor.webp">
+                                <source srcset="img/section/about/decor-sm.webp" media="(max-width: 576px)">
+                                <source srcset="img/section/about/decor-sm.png" media="(max-width: 576px)">
+                                <source srcset="img/section/about/decor.webp">
                                 <img src="img/section/about/decor.png" class="decor" alt="" aria-hidden="true">
                             </picture>
                         </div>
