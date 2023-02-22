@@ -1,0 +1,30 @@
+.address {
+    font-style: normal;
+    color: rgba($colors-text-primary, 0.6);
+
+    &__text {
+        display: block;
+        margin-bottom: 8px;
+
+        &:last-child {
+            margin-bottom: 40px;
+        }
+
+        &.link {
+            position: relative;
+
+            &::after {
+                content: '';
+
+                position: absolute;
+                bottom: 2px;
+                left: 0;
+
+                width: 100%;
+                height: 1px;
+
+                background-color: rgba($colors-text-primary, 0.6);
+            }
+        }
+    }
+}

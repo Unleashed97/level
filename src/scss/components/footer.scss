@@ -1,2 +1,32 @@
 .footer {
+    background-color: $colors-primary;
+
+    &__top {
+        padding: 64px 0;
+
+        display: flex;
+        gap: 155px;
+
+        border-bottom: 1px solid rgba($colors-text-primary, 0.1);
+    }
+
+    &__main-info {
+        display: grid;
+        grid-template-columns: repeat(2, max-content);
+        gap: 0 168px;
+    }
+
+    &__bottom {
+        padding: 33px 0;
+
+        font-size: 1.4rem;
+        color: rgba($colors-text-primary, 0.6);
+    }
+
+    &__item-caption {
+        display: block;
+        margin-bottom: 16px;
+
+        font-weight: 700;
+    }
 }

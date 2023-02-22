@@ -2,6 +2,12 @@
     display: flex;
     align-items: center;
 
+    &.footer__socials {
+        .socials__list {
+            gap: 21px;
+        }
+    }
+
     &__caption {
         position: relative;
 
