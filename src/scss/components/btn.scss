@@ -1,0 +1,29 @@
+.btn {
+    width: fit-content;
+
+    font-family: $family;
+    font-weight: 400;
+    font-size: 2rem;
+    line-height: 1.1;
+
+    background: 0;
+    border: 0;
+    border-radius: 6px;
+
+    cursor: pointer;
+
+    &--outline {
+        padding: 18px 48px;
+
+        color: $colors-text-highlight;
+
+        border: 1px solid $colors-text-highlight;
+
+        transition: color 0.3s linear, background-color 0.3s linear;
+
+        &:hover {
+            color: $colors-text-secondary;
+            background-color: $colors-text-highlight;
+        }
+    }
+}

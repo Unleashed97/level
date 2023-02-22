@@ -1,0 +1,48 @@
+.socials {
+    display: flex;
+    align-items: center;
+
+    &__caption {
+        position: relative;
+
+        margin-right: 77px;
+
+        font-size: 1.4rem;
+
+        &::after {
+            content: '';
+
+            position: absolute;
+            right: -53px;
+            top: 50%;
+
+            transform: translate(0, -50%);
+
+            width: 29px;
+            height: 1px;
+
+            background-color: rgba($colors-text-primary, 0.4);
+        }
+    }
+
+    &__list {
+        display: flex;
+        align-items: center;
+        gap: 12px;
+    }
+
+    &__item {
+        .icon {
+            transition: fill 0.3s linear;
+        }
+    }
+
+    &__link {
+        display: block;
+        &:hover {
+            .icon {
+                fill: $colors-text-highlight;
+            }
+        }
+    }
+}

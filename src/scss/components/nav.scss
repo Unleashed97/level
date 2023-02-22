@@ -8,4 +8,12 @@
         gap: 32px;
         color: $colors-text-primary;
     }
+
+    &__item {
+        transition: color 0.3s linear;
+
+        &:hover {
+            color: $colors-text-highlight;
+        }
+    }
 }
