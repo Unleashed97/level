@@ -7,6 +7,11 @@
     font-weight: 400;
     font-size: 2rem;
     line-height: 1.1;
+    text-align: center;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
 
     background: 0;
     border: 0;
@@ -26,6 +31,38 @@
         &:hover {
             color: $colors-text-secondary;
             background-color: $colors-text-highlight;
+        }
+    }
+
+    &--back {
+        display: flex;
+        align-items: center;
+        gap: 16px;
+
+        margin-bottom: 40px;
+
+        &:hover {
+            .btn__text {
+                transform: translateX(0);
+                opacity: 1;
+            }
+        }
+        .btn__icon {
+            transform: rotate(180deg);
+        }
+
+        .btn__text {
+            font-size: 1.6rem;
+            color: $colors-text-highlight;
+
+            transform: translateX(15px);
+            opacity: 0;
+
+            transition: opacity 0.3s linear, transform 0.3s ease;
+
+            @media (max-width: $sm) {
+                font-size: 1.4rem;
+            }
         }
     }
 }
