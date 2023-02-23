@@ -27,4 +27,20 @@
             color: $colors-text-highlight;
         }
     }
+
+    &--mob {
+        display: block;
+
+        margin-bottom: 40px;
+
+        .nav__list {
+            display: flex;
+            flex-direction: column;
+            gap: 32px;
+        }
+
+        .nav__item {
+            font-size: 2rem;
+        }
+    }
 }

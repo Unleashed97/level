@@ -1,4 +1,7 @@
 .burger {
+    position: relative;
+    z-index: 10;
+
     display: none;
 
     width: 20px;
@@ -14,6 +17,21 @@
 
     @media (max-width: $md-target) {
         display: block;
+
+        &.active {
+            .burger__item {
+                background-color: $colors-text-highlight;
+            }
+            .burger__item:nth-child(1) {
+                transform: translateY(6px) rotate(45deg);
+            }
+            .burger__item:nth-child(2) {
+                opacity: 0;
+            }
+            .burger__item:nth-child(3) {
+                transform: translateY(-6px) rotate(135deg);
+            }
+        }
     }
 
     &__item {
@@ -26,7 +44,8 @@
 
         background-color: $colors-secondary;
 
-        transition: transform 0.3s linear, opacity 0.3s linear;
+        transition: transform 0.3s linear, opacity 0.3s linear,
+            background-color 0.3s linear;
 
         &:last-child {
             margin-bottom: 0;

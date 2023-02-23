@@ -5,6 +5,13 @@
     right: 0;
     z-index: 1;
 
+    &.active {
+        .header__nav-mob {
+            display: flex;
+            animation: mob-menu-apper 0.3s;
+        }
+    }
+
     &__inner {
         position: relative;
 
@@ -23,5 +30,41 @@
         @media (max-width: $sm) {
             padding: 32px 0;
         }
+    }
+
+    &__nav-mob {
+        position: absolute;
+        inset: 0;
+        z-index: 5;
+
+        width: 100%;
+        height: 100vh;
+
+        display: none;
+        flex-direction: column;
+
+        padding: 114px 16px 16px;
+
+        background-color: $colors-primary;
+
+        animation: mob-menu-apper backwards 0.3s;
+    }
+
+    &__nav-mob-title {
+        margin-bottom: 32px;
+
+        font-family: $family-title;
+        font-size: 3rem;
+        font-weight: 700;
+        text-transform: uppercase;
+    }
+}
+
+@keyframes mob-menu-apper {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
     }
 }
