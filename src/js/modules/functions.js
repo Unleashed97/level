@@ -8,3 +8,13 @@ export const handleBurger = () => {
         header.classList.toggle('active')
     })
 }
+
+export const handleGoBackBtn = () => {
+    const goBackBtn = document.querySelector('.btn--back')
+
+    if (goBackBtn) {
+        goBackBtn.addEventListener('click', () => {
+            history.back()
+        })
+    }
+}
