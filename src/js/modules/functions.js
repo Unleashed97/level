@@ -18,3 +18,31 @@ export const handleGoBackBtn = () => {
         })
     }
 }
+
+export const handleModal = () => {
+    const modal = document.querySelector('.modal')
+
+    if (modal) {
+        const closeBtn = modal.querySelector('.modal__close')
+        const confirmBtn = modal.querySelector('.modal__confirm')
+        const cancelBtn = modal.querySelector('.modal__cancel')
+
+        const funcCloseModal = () => {
+            modal.classList.remove('active')
+        }
+
+        confirmBtn.addEventListener('click', () => {
+            funcCloseModal()
+        })
+
+        closeBtn.addEventListener('click', () => {
+            funcCloseModal()
+        })
+
+        window.addEventListener('click', ({ target }) => {
+            if (target === modal) {
+                funcCloseModal
+            }
+        })
+    }
+}

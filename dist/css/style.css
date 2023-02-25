@@ -959,6 +959,7 @@ p {
   font-size: 2rem;
   line-height: 1.1;
   text-align: center;
+  color: #ffffff;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -1001,6 +1002,9 @@ p {
   .btn--back .btn__text {
     font-size: 1.4rem;
   }
+}
+.btn--close {
+  padding: 7px;
 }
 
 .socials {
@@ -1115,4 +1119,74 @@ p {
 }
 .burger__item:last-child {
   margin-bottom: 0;
+}
+
+.modal {
+  position: absolute;
+  inset: 0;
+  z-index: 100;
+  display: none;
+  align-items: center;
+  justify-content: center;
+  padding: 16px;
+  background-color: rgba(17, 16, 19, 0.94);
+}
+.modal.active {
+  display: flex;
+}
+.modal__inner {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 48px 77px;
+  background-color: #161519;
+}
+@media (max-width: 576px) {
+  .modal__inner {
+    padding: 48px 24px;
+  }
+}
+.modal__close {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+}
+.modal__close .icon {
+  transition: stroke 0.3s linear;
+}
+.modal__close:hover .icon {
+  stroke: #ffce92;
+}
+.modal__title {
+  max-width: 400px;
+  margin-bottom: 24px;
+  font-family: Segoe UI, sans-serif;
+  font-weight: 700;
+  font-size: 2.4rem;
+  line-height: 1.4;
+  text-transform: uppercase;
+  text-align: center;
+}
+@media (max-width: 576px) {
+  .modal__title {
+    font-size: 2rem;
+    margin-bottom: 32px;
+  }
+}
+@media (max-width: 576px) {
+  .modal .btn {
+    padding: 18px 14px;
+    font-size: 1.6rem;
+  }
+}
+.modal .btn + .btn {
+  margin-top: 24px;
+}
+.modal .btn.modal__cancel {
+  font-size: 1.6rem;
+  transition: color 0.3s linear;
+}
+.modal .btn.modal__cancel:hover {
+  color: #ffce92;
 }

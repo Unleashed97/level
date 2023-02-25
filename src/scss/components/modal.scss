@@ -1,0 +1,86 @@
+.modal {
+    position: absolute;
+    inset: 0;
+    z-index: 100;
+
+    display: none;
+    align-items: center;
+    justify-content: center;
+
+    padding: 16px;
+
+    background-color: rgba(#111013, 0.94);
+
+    &.active {
+        display: flex;
+    }
+
+    &__inner {
+        position: relative;
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        padding: 48px 77px;
+
+        background-color: $colors-primary;
+
+        @media (max-width: $sm) {
+            padding: 48px 24px;
+        }
+    }
+
+    &__close {
+        position: absolute;
+        top: 10px;
+        right: 10px;
+
+        .icon {
+            transition: stroke 0.3s linear;
+        }
+
+        &:hover .icon {
+            stroke: $colors-text-highlight;
+        }
+    }
+
+    &__title {
+        max-width: 400px;
+
+        margin-bottom: 24px;
+
+        font-family: $family;
+        font-weight: 700;
+        font-size: 2.4rem;
+        line-height: 1.4;
+        text-transform: uppercase;
+        text-align: center;
+
+        @media (max-width: $sm) {
+            font-size: 2rem;
+            margin-bottom: 32px;
+        }
+    }
+
+    .btn {
+        @media (max-width: $sm) {
+            padding: 18px 14px;
+            font-size: 1.6rem;
+        }
+    }
+
+    .btn + .btn {
+        margin-top: 24px;
+    }
+
+    .btn.modal__cancel {
+        font-size: 1.6rem;
+
+        transition: color 0.3s linear;
+
+        &:hover {
+            color: $colors-text-highlight;
+        }
+    }
+}

@@ -8,6 +8,7 @@
     font-size: 2rem;
     line-height: 1.1;
     text-align: center;
+    color: $colors-text-primary;
 
     display: flex;
     align-items: center;
@@ -64,5 +65,9 @@
                 font-size: 1.4rem;
             }
         }
+    }
+
+    &--close {
+        padding: 7px;
     }
 }
