@@ -320,17 +320,17 @@ template {
 /* segoe ui regular*/
 @font-face {
   font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
-  font-family: "Segoe UI";
+  font-family: "Segoe UI Bold";
   font-style: normal;
   font-weight: 700;
-  src: url("../fonts/segoe-ui/Segoe-UI-Bold.woff2") format("woff2"), url("../fonts/segoe-ui/Segoe-UI-Bold.woff") format("woff"); /* Chrome 5+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+  src: url("../fonts/segoe-ui/segoe-ui-bold.woff") format("woff");
 }
 @font-face {
   font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
-  font-family: "Segoe UI";
+  font-family: "Segoe UI Regular";
   font-style: normal;
   font-weight: 400;
-  src: url("../fonts/segoe-ui/Segoe-UI.woff2") format("woff2"), url("../fonts/segoe-ui/Segoe-UI.woff") format("woff"); /* Chrome 5+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+  src: url("../fonts/segoe-ui/segoe-ui.woff") format("woff");
 }
 /* inter-700 - cyrillic_latin */
 @font-face {
@@ -971,6 +971,17 @@ p {
 .section--contacts .socials__item {
   transform: rotate(0);
 }
+.section--actions .section__actions-list {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 48px 28px;
+  margin-bottom: 80px;
+}
+@media (max-width: 768px) {
+  .section--actions .section__actions-list {
+    grid-template-columns: 1fr;
+  }
+}
 .section__title {
   margin-bottom: 40px;
   font-family: Inter, sans-serif;
@@ -988,6 +999,38 @@ p {
   .section__title {
     margin-bottom: 32px;
     font-size: 2.4rem;
+  }
+}
+.section__header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 40px;
+  margin-bottom: 80px;
+}
+@media (max-width: 768px) {
+  .section__header {
+    flex-direction: column;
+    align-items: flex-start;
+    margin-bottom: 48px;
+  }
+}
+@media (max-width: 576px) {
+  .section__header {
+    margin-bottom: 40px;
+  }
+}
+.section__header .section__title {
+  margin-bottom: 0;
+}
+.section__header-note {
+  font-size: 1.4rem;
+  text-align: right;
+  color: rgba(255, 255, 255, 0.6);
+}
+@media (max-width: 768px) {
+  .section__header-note {
+    text-align: left;
   }
 }
 .section__text {
@@ -1424,4 +1467,103 @@ p {
   font-size: 1.4rem;
   color: rgba(0, 0, 0, 0.4);
   line-height: normal;
+}
+
+.event__image {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  margin-bottom: 40px;
+  border-radius: 6px;
+}
+@media (max-width: 992px) {
+  .event__image {
+    margin-bottom: 16px;
+  }
+}
+@media (max-width: 576px) {
+  .event__image {
+    margin-bottom: 38px;
+  }
+}
+.event__body {
+  position: relative;
+  min-height: 156px;
+}
+@media (max-width: 576px) {
+  .event__body {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+  }
+}
+.event__caption {
+  position: absolute;
+  display: inline-block;
+  font-weight: 700;
+  font-size: 2rem;
+  line-height: 1.4;
+  text-transform: uppercase;
+  color: #ffce92;
+  transform: translate(-22px, 37px) rotate(-90deg);
+}
+@media (max-width: 992px) {
+  .event__caption {
+    font-size: 1.8rem;
+  }
+}
+@media (max-width: 576px) {
+  .event__caption {
+    position: relative;
+    margin-left: 53px;
+    font-size: 1.6rem;
+    transform: unset;
+  }
+}
+.event__caption::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: -53px;
+  transform: translateY(-50%);
+  width: 29px;
+  height: 1px;
+  background-color: rgba(255, 255, 255, 0.4);
+}
+.event__desc {
+  margin-left: 102px;
+}
+@media (max-width: 992px) {
+  .event__desc {
+    margin-left: 73px;
+  }
+}
+@media (max-width: 576px) {
+  .event__desc {
+    margin-left: 0;
+  }
+}
+.event__title {
+  margin-bottom: 24px;
+  font-family: Segoe UI, sans-serif;
+  font-weight: 700;
+  font-size: 4.8rem;
+  line-height: 1.4;
+  text-transform: uppercase;
+  letter-spacing: 0;
+}
+@media (max-width: 992px) {
+  .event__title {
+    font-size: 3.2rem;
+  }
+}
+@media (max-width: 576px) {
+  .event__title {
+    font-size: 2.4rem;
+  }
+}
+@media (max-width: 576px) {
+  .event__text {
+    font-size: 1.4rem;
+  }
 }

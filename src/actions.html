@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<!-- head include -->
+@@include('html/partials/head.html', {
+"title": "Акции"
+})
+
+<body>
+    <!-- header include -->
+    @@include('html/partials/header.html')
+
+    <!-- main -->
+    <main>
+        <!-- section showcase -->
+        <section class="section section--showcase section--contacts section--actions">
+            <div class="container">
+                <div class="section__inner">
+                    <div class="section__text-block">
+
+                        <button type="button" class="btn btn--back">
+                            <img src="img/icons/chevron-left.svg" class="btn__icon" alt="">
+                            <span class="btn__text">Назад</span>
+                        </button>
+
+                        <div class="section__header">
+                            <h1 class="section__title">
+                                Акции
+                            </h1>
+
+                            <div class="section__header-note">
+                                <a href="tel:+79785000050">+7 (978) 500-00-50</a>
+                                <p>*Подробности акций уточняйте у администратора</p>
+                            </div>
+                        </div>
+
+                        <div class="section__actions-list">
+                            <article class="event">
+                                <picture>
+                                    <source srcset="img/actions/happy-hours.webp">
+                                    <img src="img/actions/happy-hours.jpg" class="event__image" alt="">
+                                </picture>
+
+                                <div class="event__body">
+
+                                    <span class="event__caption">
+                                        Акция
+                                    </span>
+
+                                    <div class="event__desc">
+                                        <h3 class="event__title">Счастливые часы</h3>
+                                        <p class="event__text">
+                                            С 12:00 до 17:00 счастливые часы, акция на меню кухни 20%
+                                        </p>
+                                    </div>
+                                </div>
+                            </article>
+                            <article class="event">
+                                <picture>
+                                    <source srcset="img/actions/dessert.webp">
+                                    <img src="img/actions/dessert.jpg" class="event__image" alt="">
+                                </picture>
+
+                                <div class="event__body">
+
+                                    <span class="event__caption">
+                                        Акция
+                                    </span>
+
+                                    <div class="event__desc">
+                                        <h3 class="event__title">Десерт в подарок</h3>
+                                        <p class="event__text">
+                                            Бесплатный десерт (лимонный тарт) при заказе от 1 500₽
+                                        </p>
+                                    </div>
+                                </div>
+                            </article>
+                            <article class="event">
+                                <picture>
+                                    <source srcset="img/actions/pickup.webp">
+                                    <img src="img/actions/pickup.jpg" class="event__image" alt="">
+                                </picture>
+
+                                <div class="event__body">
+
+                                    <span class="event__caption">
+                                        Акция
+                                    </span>
+
+                                    <div class="event__desc">
+                                        <h3 class="event__title">самовывоз</h3>
+                                        <p class="event__text">
+                                            20% скидка на самовывоз
+                                        </p>
+                                    </div>
+                                </div>
+                            </article>
+                            <article class="event">
+                                <picture>
+                                    <source srcset="img/actions/bday.webp">
+                                    <img src="img/actions/bday.jpg" class="event__image" alt="">
+                                </picture>
+
+                                <div class="event__body">
+
+                                    <span class="event__caption">
+                                        Акция
+                                    </span>
+
+                                    <div class="event__desc">
+                                        <h3 class="event__title">День рождения</h3>
+                                        <p class="event__text">
+                                            Именинникам скидка 20%
+                                        </p>
+                                    </div>
+                                </div>
+                            </article>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section> <!-- end of section showcase-->
+
+    </main>
+    <!-- footer include -->
+    @@include('html/partials/footer.html')
+
+    <!-- scripts -->
+    <script src="js/script.min.js"></script>
+    <!-- <script src="js/phoneInput.js"></script> -->
+</body>
+
+</html>

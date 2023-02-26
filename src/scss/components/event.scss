@@ -1,0 +1,107 @@
+.event {
+    &__image {
+        display: block;
+        max-width: 100%;
+        height: auto;
+
+        margin-bottom: 40px;
+
+        border-radius: 6px;
+
+        @media (max-width: $lg) {
+            margin-bottom: 16px;
+        }
+
+        @media (max-width: $sm) {
+            margin-bottom: 38px;
+        }
+    }
+
+    &__body {
+        position: relative;
+
+        min-height: 156px;
+
+        @media (max-width: $sm) {
+            display: flex;
+            flex-direction: column;
+            gap: 24px;
+        }
+    }
+
+    &__caption {
+        position: absolute;
+
+        display: inline-block;
+
+        font-weight: 700;
+        font-size: 2rem;
+        line-height: 1.4;
+        text-transform: uppercase;
+        color: $colors-text-highlight;
+
+        transform: translate(-22px, 37px) rotate(-90deg);
+
+        @media (max-width: $lg) {
+            font-size: 1.8rem;
+        }
+
+        @media (max-width: $sm) {
+            position: relative;
+
+            margin-left: 53px;
+
+            font-size: 1.6rem;
+            transform: unset;
+        }
+
+        &::before {
+            content: '';
+            position: absolute;
+            top: 50%;
+            left: -53px;
+            transform: translateY(-50%);
+
+            width: 29px;
+            height: 1px;
+
+            background-color: rgba($colors-text-primary, 0.4);
+        }
+    }
+
+    &__desc {
+        margin-left: 102px;
+
+        @media (max-width: $lg) {
+            margin-left: 73px;
+        }
+
+        @media (max-width: $sm) {
+            margin-left: 0;
+        }
+    }
+
+    &__title {
+        margin-bottom: 24px;
+
+        font-family: $family;
+        font-weight: 700;
+        font-size: 4.8rem;
+        line-height: 1.4;
+        text-transform: uppercase;
+        letter-spacing: 0;
+
+        @media (max-width: $lg) {
+            font-size: 3.2rem;
+        }
+        @media (max-width: $sm) {
+            font-size: 2.4rem;
+        }
+    }
+
+    &__text {
+        @media (max-width: $sm) {
+            font-size: 1.4rem;
+        }
+    }
+}

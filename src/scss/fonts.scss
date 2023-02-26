@@ -12,23 +12,19 @@
 /* segoe ui regular*/
 @font-face {
     font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
-    font-family: 'Segoe UI';
+    font-family: 'Segoe UI Bold';
     font-style: normal;
     font-weight: 700;
-    src: url('../fonts/segoe-ui/Segoe-UI-Bold.woff2') format('woff2'),
-        /* Chrome 36+, Opera 23+, Firefox 39+ */
-            url('../fonts/segoe-ui/Segoe-UI-Bold.woff') format('woff'); /* Chrome 5+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+    src: url('../fonts/segoe-ui/segoe-ui-bold.woff') format('woff');
 }
 
 //   segoe ui bold
 @font-face {
     font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
-    font-family: 'Segoe UI';
+    font-family: 'Segoe UI Regular';
     font-style: normal;
     font-weight: 400;
-    src: url('../fonts/segoe-ui/Segoe-UI.woff2') format('woff2'),
-        /* Chrome 36+, Opera 23+, Firefox 39+ */
-            url('../fonts/segoe-ui/Segoe-UI.woff') format('woff'); /* Chrome 5+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+    src: url('../fonts/segoe-ui/segoe-ui.woff') format('woff');
 }
 
 /* inter-700 - cyrillic_latin */
