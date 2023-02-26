@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<!-- head include -->
+@@include('html/partials/head.html', {
+"title": "Бронь столов"
+})
+
+<body>
+    <!-- header include -->
+    @@include('html/partials/header.html')
+
+    <!-- main -->
+    <main>
+        <!-- section showcase -->
+        <section class="section section--showcase section--contacts">
+            <div class="container">
+                <div class="section__inner">
+                    <div class="section__text-block">
+
+                        <button type="button" class="btn btn--back">
+                            <img src="img/icons/chevron-left.svg" class="btn__icon" alt="">
+                            <span class="btn__text">Назад</span>
+                        </button>
+
+                        <h1 class="section__title">
+                            Контакты
+                        </h1>
+
+                        <div class="contacts contacts--contacts">
+                            <div class="contacts__col">
+                                <span class="contacts__col-caption">
+                                    Контакты
+                                </span>
+                                <address class="address">
+                                    <p class="address__text">ulitsa Pushkina, 9, Симферополь</p>
+                                    <a href="tel:+79785000050" class="address__text">+7 (978) 500-00-50
+                                        (Администратор)</a>
+                                </address>
+                            </div>
+                            <div class="contacts__col">
+                                <span class="contacts__col-caption">
+                                    Часы работы
+                                </span>
+                                <address class="address">
+                                    <div class="address__grid">
+                                        <div class="address__col">
+                                            <p class="address__text">Пн – Чт</p>
+                                            <p class="address__text">09:00 – 00:00</p>
+                                        </div>
+                                        <div class="address__col">
+                                            <p class="address__text">Пт – Вс</p>
+                                            <p class="address__text">09:00 – 01:00</p>
+                                        </div>
+                                    </div>
+                                </address>
+                            </div>
+                            <div class="contacts__col">
+                                <span class="contacts__col-caption">
+                                    Сотрудничество
+                                </span>
+                                <address class="address">
+                                    <p class="address__text">У вас есть предложение для нас?</p>
+                                    <a href="mailto:level@mail.ru" class="address__text">level@mail.ru</a>
+                                </address>
+                            </div>
+
+
+                            <div class="socials">
+                                <ul class="socials__list">
+                                    <li class="socials__item">
+                                        <a href="#" class="socials__link">
+                                            <svg width="20" height="13" viewBox="0 0 20 13" fill="none"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <path class="icon"
+                                                    d="M10.8984 12.1717C4.51671 12.1717 0.876764 7.79672 0.725098 0.516723H3.92176C4.02676 5.86006 6.38337 8.12339 8.25004 8.59006V0.516723H11.2602V5.12506C13.1035 4.92672 15.0399 2.82672 15.6933 0.516723H18.7033C18.2016 3.36339 16.1016 5.46339 14.6083 6.32672C16.1016 7.02672 18.4934 8.85839 19.4034 12.1717H16.09C15.3783 9.95506 13.6052 8.24006 11.2602 8.00672V12.1717H10.8984Z"
+                                                    fill="white" />
+                                            </svg>
+                                        </a>
+                                    </li>
+                                    <li class="socials__item">
+                                        <a href="#" class="socials__link">
+                                            <svg width="18" height="16" viewBox="0 0 18 16" fill="none"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <path class="icon"
+                                                    d="M1.10355 6.96804C1.10355 6.96804 9.06452 3.45574 11.8255 2.21897C12.8839 1.72431 16.4733 0.141238 16.4733 0.141238C16.4733 0.141238 18.1299 -0.551294 17.9918 1.13064C17.9458 1.82324 17.5777 4.2472 17.2095 6.8691C16.6573 10.5793 16.0591 14.6358 16.0591 14.6358C16.0591 14.6358 15.9671 15.7736 15.1848 15.9715C14.4025 16.1694 13.114 15.279 12.8839 15.081C12.6998 14.9327 9.43263 12.7065 8.2362 11.6182C7.91406 11.3214 7.54595 10.7278 8.28218 10.0352C9.93882 8.40267 11.9175 6.37444 13.114 5.08824C13.6662 4.49457 14.2184 3.10944 11.9175 4.79137C8.65036 7.2154 5.42916 9.49101 5.42916 9.49101C5.42916 9.49101 4.69286 9.98567 3.31237 9.54044C1.93181 9.09527 0.321209 8.5016 0.321209 8.5016C0.321209 8.5016 -0.783137 7.75957 1.10355 6.96804Z"
+                                                    fill="white" />
+                                            </svg>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <script type="text/javascript" charset="utf-8" async
+                src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3Aca18c72f214e926f4568c46232d1620cd047368f479fb108a0ed2c6b818e9a8c&amp;width=100%25&amp;height=600&amp;lang=ru_RU&amp;scroll=false"></script>
+        </section> <!-- end of section showcase-->
+
+    </main>
+    <!-- footer include -->
+    @@include('html/partials/footer.html')
+
+    <!-- scripts -->
+    <script src="js/script.min.js"></script>
+    <!-- <script src="js/phoneInput.js"></script> -->
+</body>
+
+</html>

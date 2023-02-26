@@ -199,20 +199,6 @@
                 font-size: 2rem;
             }
         }
-
-        // .section__content-image {
-        //     display: none;
-
-        //     // max-width: 100%;
-        //     // width: 100%;
-        //     // min-height: 100%;
-
-        //     margin: 0 -16px;
-
-        //     @media (max-width: $sm) {
-        //         display: block;
-        //     }
-        // }
     }
 
     &--common {
@@ -397,6 +383,46 @@
                 margin-top: 524px;
 
                 background-image: url('../img/section/reservation/interior-sm.jpg');
+            }
+        }
+    }
+
+    &--contacts {
+        .section__inner {
+            min-height: auto;
+            padding-top: 107px;
+
+            align-items: flex-start;
+
+            @media (max-width: $xl) {
+                padding-top: 148px;
+            }
+
+            @media (max-width: $md-target) {
+                padding-top: 97px;
+            }
+        }
+
+        .section__text-block {
+            width: 100%;
+            max-width: 100%;
+        }
+
+        .socials {
+            all: unset;
+
+            margin-left: auto;
+
+            @media (max-width: $xl) {
+                margin-left: 0;
+            }
+
+            &__list {
+                gap: 21px;
+            }
+
+            &__item {
+                transform: rotate(0);
             }
         }
     }

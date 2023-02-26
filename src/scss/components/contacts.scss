@@ -41,6 +41,27 @@
         }
     }
 
+    &--contacts {
+        display: grid;
+        grid-template-columns: 270px 230px 260px 1fr;
+        align-items: start;
+        gap: 60px;
+
+        margin-bottom: 48px;
+
+        @media (max-width: $xl) {
+            grid-template-columns: repeat(2, minmax(0, 280px));
+            grid-template-rows: repeat(2, auto);
+        }
+
+        @media (max-width: $sm) {
+            grid-template-columns: 1fr;
+            grid-template-rows: auto;
+            gap: 24px;
+            margin-bottom: 40px;
+        }
+    }
+
     &__col-caption {
         display: block;
         margin-bottom: 16px;

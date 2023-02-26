@@ -937,6 +937,40 @@ p {
     background-image: url("../img/section/reservation/interior-sm.jpg");
   }
 }
+.section--contacts .section__inner {
+  min-height: auto;
+  padding-top: 107px;
+  align-items: flex-start;
+}
+@media (max-width: 1200px) {
+  .section--contacts .section__inner {
+    padding-top: 148px;
+  }
+}
+@media (max-width: 833px) {
+  .section--contacts .section__inner {
+    padding-top: 97px;
+  }
+}
+.section--contacts .section__text-block {
+  width: 100%;
+  max-width: 100%;
+}
+.section--contacts .socials {
+  all: unset;
+  margin-left: auto;
+}
+@media (max-width: 1200px) {
+  .section--contacts .socials {
+    margin-left: 0;
+  }
+}
+.section--contacts .socials__list {
+  gap: 21px;
+}
+.section--contacts .socials__item {
+  transform: rotate(0);
+}
 .section__title {
   margin-bottom: 40px;
   font-family: Inter, sans-serif;
@@ -1259,6 +1293,27 @@ p {
 @media (max-width: 768px) {
   .contacts--reservation {
     grid-template-columns: minmax(0, max-content);
+  }
+}
+.contacts--contacts {
+  display: grid;
+  grid-template-columns: 270px 230px 260px 1fr;
+  align-items: start;
+  gap: 60px;
+  margin-bottom: 48px;
+}
+@media (max-width: 1200px) {
+  .contacts--contacts {
+    grid-template-columns: repeat(2, minmax(0, 280px));
+    grid-template-rows: repeat(2, auto);
+  }
+}
+@media (max-width: 576px) {
+  .contacts--contacts {
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    gap: 24px;
+    margin-bottom: 40px;
   }
 }
 .contacts__col-caption {
