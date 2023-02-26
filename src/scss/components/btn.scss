@@ -35,6 +35,21 @@
         }
     }
 
+    &--fill {
+        padding: 18px 48px;
+
+        color: $colors-text-primary;
+
+        background-color: #000000;
+
+        transition: color 0.3s linear, background-color 0.3s linear;
+
+        &:hover {
+            color: $colors-text-secondary;
+            background-color: $colors-text-highlight;
+        }
+    }
+
     &--back {
         display: flex;
         align-items: center;

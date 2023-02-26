@@ -46,3 +46,22 @@ export const handleModal = () => {
         })
     }
 }
+
+export const handleForm = () => {
+    const form = document.querySelector('.form')
+
+    if (form) {
+        const inputDate = form.querySelector('.input__date')
+
+        inputDate.addEventListener('click', (e) => {
+            inputDate.type = 'date'
+            inputDate.showPicker()
+        })
+
+        const formData = new FormData(form)
+
+        form.addEventListener('submit', (e) => {
+            e.preventDefault()
+        })
+    }
+}

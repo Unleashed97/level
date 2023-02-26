@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<!-- head include -->
+@@include('html/partials/head.html', {
+"title": "Бронь столов"
+})
+
+<body>
+    <!-- header include -->
+    @@include('html/partials/header.html')
+
+    <!-- modal include -->
+    <!-- @@include('html/partials/modal-reservation-success.html') -->
+
+    <!-- main -->
+    <main>
+        <!-- section showcase -->
+        <section class="section section--showcase section--reservation">
+            <div class="container">
+                <div class="section__inner">
+                    <div class="section__text-block">
+
+                        <button type="button" class="btn btn--back">
+                            <img src="img/icons/chevron-left.svg" class="btn__icon" alt="">
+                            <span class="btn__text">Назад</span>
+                        </button>
+
+                        <h1 class="section__title">
+                            Бронь столов
+                        </h1>
+
+                        <div class="contacts contacts--reservation">
+                            <div class="contacts__col">
+                                <span class="contacts__col-caption">
+                                    Контакты
+                                </span>
+                                <address class="address">
+                                    <p class="address__text">ulitsa Pushkina, 9, Симферополь</p>
+                                    <a href="tel:+79785000050" class="address__text">+7 (978) 500-00-50</a>
+                                </address>
+                            </div>
+                            <div class="contacts__col">
+                                <span class="contacts__col-caption">
+                                    Часы работы
+                                </span>
+                                <address class="address">
+                                    <div class="address__grid">
+                                        <div class="address__col">
+                                            <p class="address__text">Пн – Чт</p>
+                                            <p class="address__text">09:00 – 00:00</p>
+                                        </div>
+                                        <div class="address__col">
+                                            <p class="address__text">Пт – Вс</p>
+                                            <p class="address__text">09:00 – 01:00</p>
+                                        </div>
+                                    </div>
+                                </address>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="section__form">
+                <div class="container">
+                    <form action="" class="form" method="post" enctype="multipart/form-data">
+                        <picture>
+                            <source srcset="img/section/about/decor-sm.webp" media="(max-width: 576px)">
+                            <source srcset="img/section/about/decor-sm.jpg" media="(max-width: 576px)">
+                            <source srcset=" img/section/about/decor.webp">
+                            <img src="img/section/about/decor.png" class="decor" alt="" aria-hidden="true">
+                        </picture>
+                        <h2 class="form__title">Reservation</h2>
+
+                        <div class="form__group">
+                            <input type="text" class="form__input" name="name" placeholder="Имя" required>
+                        </div>
+                        <div class="form__group">
+                            <input type="tel" class="form__input" name="tel" placeholder="Номер телефона" required>
+                        </div>
+                        <div class="form__group">
+                            <input type="number" pattern="[0-9]" class="form__input" name="persons"
+                                placeholder="Кол-во персон" required>
+                        </div>
+                        <div class="form__group">
+                            <input type="text" class="form__input input__date" name="date" placeholder="Дата" required>
+                        </div>
+                        <div class="form__group">
+                            <button type="submit" class="btn btn--fill form__submit">Забронировать столик</button>
+                        </div>
+                        <p class="form__agreement">Нажимая на кнопку я даю свое согласие на обработку персональных
+                            данных
+                        </p>
+                    </form>
+                </div>
+            </div>
+        </section> <!-- end of section showcase-->
+
+    </main>
+    <!-- footer include -->
+    @@include('html/partials/footer.html')
+
+    <!-- scripts -->
+    <script src="js/script.min.js"></script>
+    <!-- <script src="js/phoneInput.js"></script> -->
+</body>
+
+</html>

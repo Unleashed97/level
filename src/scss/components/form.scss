@@ -1,0 +1,115 @@
+.form {
+    position: relative;
+
+    max-width: 482px;
+
+    margin-left: auto;
+
+    padding: 32px 40px 40px;
+
+    background-color: $colors-secondary;
+
+    transform: translateY(-135px);
+
+    @media (max-width: $xl) {
+        max-width: 100%;
+
+        transform: translateY(-535px);
+    }
+
+    @media (max-width: $lg) {
+        max-width: 100%;
+    }
+
+    @media (max-width: $sm) {
+        padding: 24px;
+
+        transform: translateY(-484px);
+    }
+
+    .decor {
+        position: absolute;
+        top: -66px;
+        right: -66px;
+
+        transform: rotateY(180deg) rotateZ(44deg);
+
+        @media (max-width: $sm) {
+            top: -41px;
+            right: -27px;
+        }
+    }
+
+    &__title {
+        margin-bottom: 6px;
+
+        font-family: $family-cursive;
+        font-weight: 400;
+        line-height: normal;
+        font-size: 8rem;
+        color: $colors-text-secondary;
+
+        @media (max-width: $lg) {
+            text-align: center;
+        }
+
+        @media (max-width: $sm) {
+            margin-bottom: 16px;
+
+            font-size: 4.8rem;
+            text-align: left;
+        }
+    }
+
+    &__group {
+        margin-bottom: 16px;
+    }
+
+    &__input {
+        width: 100%;
+        padding: 21px 24px;
+
+        font-size: 1.4rem;
+        color: $colors-text-secondary;
+
+        background-color: #f1f0f4;
+        border-radius: 6px;
+        border: 0;
+
+        &::placeholder {
+            color: $colors-text-light;
+        }
+
+        // remove arraows for type=number
+        &::-webkit-outer-spin-button,
+        &::-webkit-inner-spin-button {
+            -webkit-appearance: none;
+            margin: 0;
+        }
+        /* Firefox */
+        -moz-appearance: textfield;
+
+        @media (max-width: $sm) {
+            font-size: 1.6rem;
+        }
+    }
+
+    &__submit {
+        margin-top: 24px;
+        width: 100%;
+
+        @media (max-width: $xl) {
+            margin: 24px auto 0;
+            max-width: 402px;
+        }
+        @media (max-width: $md) {
+            max-width: 100%;
+        }
+    }
+
+    &__agreement {
+        font-size: 1.4rem;
+        color: rgba(#000000, 0.4);
+        line-height: normal;
+    }
+}

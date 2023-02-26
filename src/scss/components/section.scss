@@ -3,6 +3,9 @@
         background-position: center;
         background-size: cover;
         background-repeat: no-repeat;
+
+        background-color: $colors-primary;
+
         .section__inner {
             position: relative;
 
@@ -348,6 +351,52 @@
             @media (max-width: $sm) {
                 bottom: -27px;
                 right: -17px;
+            }
+        }
+    }
+
+    &--reservation {
+        .section__inner {
+            min-height: auto;
+            padding-top: 107px;
+
+            align-items: flex-start;
+
+            @media (max-width: $xl) {
+                padding-top: 148px;
+            }
+
+            @media (max-width: $md-target) {
+                padding-top: 97px;
+            }
+        }
+
+        .section__title {
+            margin-bottom: 40px;
+        }
+
+        .section__form {
+            margin-top: 48px;
+
+            background-image: url('../img/section/reservation/interior.jpg');
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
+
+            height: 600px;
+
+            @media (max-width: $xl) {
+                height: 400px;
+
+                margin-top: 583px;
+            }
+            @media (max-width: $lg) {
+                background-image: url('../img/section/reservation/interior-md.jpg');
+            }
+            @media (max-width: $sm) {
+                margin-top: 524px;
+
+                background-image: url('../img/section/reservation/interior-sm.jpg');
             }
         }
     }

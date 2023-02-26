@@ -10,7 +10,7 @@
         border-bottom: 1px solid rgba($colors-text-primary, 0.1);
 
         @media (max-width: $lg) {
-            padding: 64px 0 40px;
+            padding: 64px 0 0;
 
             gap: 115px;
         }
@@ -20,24 +20,7 @@
         }
 
         @media (max-width: $sm) {
-            padding: 48px 0 24px;
-        }
-    }
-
-    &__main-info {
-        display: grid;
-        grid-template-columns: repeat(2, minmax(0, max-content));
-        gap: 0 168px;
-
-        @media (max-width: $lg) {
-            gap: 0 146px;
-        }
-
-        @media (max-width: $md-target) {
-            gap: 32px 58px;
-        }
-        @media (max-width: $sm) {
-            gap: 32px 12px;
+            padding: 48px 0 0;
         }
     }
 
@@ -50,12 +33,5 @@
         @media (max-width: $lg) {
             padding: 24px 0;
         }
-    }
-
-    &__item-caption {
-        display: block;
-        margin-bottom: 16px;
-
-        font-weight: 700;
     }
 }

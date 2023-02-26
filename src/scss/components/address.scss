@@ -2,16 +2,27 @@
     font-style: normal;
     color: rgba($colors-text-primary, 0.6);
 
+    font-size: 1.6rem;
+
+    @media (max-width: $lg) {
+        font-size: 1.4rem;
+    }
+
+    &__grid {
+        display: flex;
+        gap: 40px;
+
+        @media (max-width: $sm) {
+            gap: 96px;
+        }
+    }
+
     &__text {
         display: block;
         margin-bottom: 8px;
 
-        @media (max-width: $lg) {
-            font-size: 1.4rem;
-        }
-
         &:last-child {
-            margin-bottom: 40px;
+            margin-bottom: 0;
         }
 
         &.link {
@@ -19,22 +30,7 @@
 
             display: inline-block;
 
-            &::after {
-                content: '';
-
-                position: absolute;
-                bottom: 2px;
-                left: 0;
-
-                width: 100%;
-                height: 1px;
-
-                background-color: rgba($colors-text-primary, 0.6);
-
-                @media (max-width: $sm) {
-                    display: none;
-                }
-            }
+            text-decoration: underline;
         }
     }
 }
