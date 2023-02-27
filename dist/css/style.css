@@ -524,7 +524,7 @@ p {
   transition: color 0.3s linear;
   white-space: nowrap;
 }
-.nav__item:hover {
+.nav__item.active, .nav__item:hover {
   color: #ffce92;
 }
 .nav--mob {

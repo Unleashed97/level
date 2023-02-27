@@ -23,6 +23,7 @@
         transition: color 0.3s linear;
         white-space: nowrap;
 
+        &.active,
         &:hover {
             color: $colors-text-highlight;
         }
