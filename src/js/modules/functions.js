@@ -41,19 +41,29 @@ export const handleModal = () => {
             document.body.classList.remove('fixed')
         }
 
-        confirmBtn.addEventListener('click', () => {
-            funcCloseModal()
-        })
-
-        closeBtn.addEventListener('click', () => {
-            funcCloseModal()
-        })
-
-        window.addEventListener('click', ({ target }) => {
-            if (target === modal) {
+        if (modal.classList.contains('modal--warning')) {
+            console.log('here')
+            confirmBtn.addEventListener('click', () => {
                 funcCloseModal()
-            }
-        })
+            })
+
+            closeBtn.addEventListener('click', () => {
+                history.back()
+            })
+            cancelBtn.addEventListener('click', () => {
+                history.back()
+            })
+        } else {
+            closeBtn.addEventListener('click', () => {
+                funcCloseModal()
+            })
+
+            window.addEventListener('click', ({ target }) => {
+                if (target === modal) {
+                    funcCloseModal()
+                }
+            })
+        }
     }
 }
 
