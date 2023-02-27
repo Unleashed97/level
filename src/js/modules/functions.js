@@ -29,6 +29,7 @@ export const handleModal = () => {
 
         const funcCloseModal = () => {
             modal.classList.remove('active')
+            document.body.classList.remove('fixed')
         }
 
         confirmBtn.addEventListener('click', () => {
@@ -41,7 +42,7 @@ export const handleModal = () => {
 
         window.addEventListener('click', ({ target }) => {
             if (target === modal) {
-                funcCloseModal
+                funcCloseModal()
             }
         })
     }

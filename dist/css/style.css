@@ -348,7 +348,6 @@ template {
 
 html {
   font-size: 62.5%;
-  overflow-x: hidden;
 }
 
 body {
@@ -378,6 +377,11 @@ h5,
 h6,
 p {
   margin: 0;
+}
+
+.fixed {
+  position: fixed;
+  inset: 0;
 }
 
 .header {
@@ -1255,6 +1259,8 @@ p {
   align-items: center;
   justify-content: center;
   padding: 16px;
+  margin: auto;
+  overflow: auto;
   background-color: rgba(17, 16, 19, 0.94);
 }
 .modal.active {

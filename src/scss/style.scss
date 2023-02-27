@@ -15,7 +15,6 @@
 
 html {
     font-size: 62.5%;
-    overflow-x: hidden;
 }
 
 body {
@@ -45,6 +44,12 @@ h5,
 h6,
 p {
     margin: 0;
+}
+
+// fixed body
+.fixed {
+    position: fixed;
+    inset: 0;
 }
 
 // components
