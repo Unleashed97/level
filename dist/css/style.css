@@ -1166,7 +1166,9 @@ p {
   transition: fill 0.3s linear;
 }
 .socials__link {
-  display: block;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .socials__link:hover .icon {
   fill: #ffce92;

@@ -45,7 +45,10 @@
     }
 
     &__link {
-        display: block;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
         &:hover {
             .icon {
                 fill: $colors-text-highlight;
