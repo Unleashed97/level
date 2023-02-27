@@ -1,0 +1,409 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<!-- head include -->
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js" defer></script>
+    <script src="js/script.min.js" defer></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="css/style.min.css">
+    <title>Мероприятия</title>
+</head>
+
+<body>
+    <!-- header include -->
+    <header class="header">
+    <div class="container">
+        <div class="header__inner">
+            <a href="index.html" class="logo header__logo">
+                LEVEL
+            </a>
+
+            <button class="burger">
+                <span class="burger__item"></span>
+                <span class="burger__item"></span>
+                <span class="burger__item"></span>
+            </button>
+
+            <nav class="nav">
+                <ul class="nav__list nav__list--left">
+                    <li class="nav__item">
+                        <a href="#" class="nav__link">
+                            Меню заведения
+                        </a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="dym-cultury.html" class="nav__link">
+                            Дым культуры
+                        </a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="reservation.html" class="nav__link">
+                            Забронировать
+                        </a>
+                    </li>
+                </ul>
+
+                <ul class="nav__list nav__list--right">
+                    <li class="nav__item">
+                        <a href="events.html" class="nav__link">
+                            Мероприятия
+                        </a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="actions.html" class="nav__link">
+                            Акции
+                        </a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="contacts.html" class="nav__link">
+                            Контакты
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+
+    <div class="header__nav-mob">
+        <span class="header__nav-mob-title">Меню</span>
+        <nav class="nav nav--mob">
+            <ul class="nav__list">
+                <li class="nav__item">
+                    <a href="#" class="nav__link">
+                        Меню заведения
+                    </a>
+                </li>
+                <li class="nav__item">
+                    <a href="dym-cultury.html" class="nav__link">
+                        Дым культуры
+                    </a>
+                </li>
+                <li class="nav__item">
+                    <a href="reservation.html" class="nav__link">
+                        Забронировать
+                    </a>
+                </li>
+                <li class="nav__item">
+                    <a href="events.html" class="nav__link">
+                        Мероприятия
+                    </a>
+                </li>
+                <li class="nav__item">
+                    <a href="actions.html" class="nav__link">
+                        Акции
+                    </a>
+                </li>
+                <li class="nav__item">
+                    <a href="contacts.html" class="nav__link">
+                        Контакты
+                    </a>
+                </li>
+            </ul>
+        </nav>
+
+        <div class="socials">
+            <span class="socials__caption">Мы в социальных сетях</span>
+
+            <ul class="socials__list">
+                <li class="socials__item">
+                    <a href="#" class="socials__link">
+                        <svg width="20" height="13" viewBox="0 0 20 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path class="icon"
+                                d="M10.8984 12.1717C4.51671 12.1717 0.876764 7.79672 0.725098 0.516723H3.92176C4.02676 5.86006 6.38337 8.12339 8.25004 8.59006V0.516723H11.2602V5.12506C13.1035 4.92672 15.0399 2.82672 15.6933 0.516723H18.7033C18.2016 3.36339 16.1016 5.46339 14.6083 6.32672C16.1016 7.02672 18.4934 8.85839 19.4034 12.1717H16.09C15.3783 9.95506 13.6052 8.24006 11.2602 8.00672V12.1717H10.8984Z"
+                                fill="white" />
+                        </svg>
+                    </a>
+                </li>
+                <li class="socials__item">
+                    <a href="#" class="socials__link">
+                        <svg width="18" height="16" viewBox="0 0 18 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path class="icon"
+                                d="M1.10355 6.96804C1.10355 6.96804 9.06452 3.45574 11.8255 2.21897C12.8839 1.72431 16.4733 0.141238 16.4733 0.141238C16.4733 0.141238 18.1299 -0.551294 17.9918 1.13064C17.9458 1.82324 17.5777 4.2472 17.2095 6.8691C16.6573 10.5793 16.0591 14.6358 16.0591 14.6358C16.0591 14.6358 15.9671 15.7736 15.1848 15.9715C14.4025 16.1694 13.114 15.279 12.8839 15.081C12.6998 14.9327 9.43263 12.7065 8.2362 11.6182C7.91406 11.3214 7.54595 10.7278 8.28218 10.0352C9.93882 8.40267 11.9175 6.37444 13.114 5.08824C13.6662 4.49457 14.2184 3.10944 11.9175 4.79137C8.65036 7.2154 5.42916 9.49101 5.42916 9.49101C5.42916 9.49101 4.69286 9.98567 3.31237 9.54044C1.93181 9.09527 0.321209 8.5016 0.321209 8.5016C0.321209 8.5016 -0.783137 7.75957 1.10355 6.96804Z"
+                                fill="white" />
+                        </svg>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</header>
+
+
+    <!-- main -->
+    <main>
+        <!-- section showcase -->
+        <section class="section section--showcase section--contacts section--events">
+            <div class="container">
+                <div class="section__inner">
+                    <div class="section__text-block">
+
+                        <button type="button" class="btn btn--back">
+                            <img src="img/icons/chevron-left.svg" class="btn__icon" alt="">
+                            <span class="btn__text">Назад</span>
+                        </button>
+
+                        <div class="section__header">
+                            <h1 class="section__title">
+                                Мероприятия
+                            </h1>
+                        </div>
+
+                        <div class="section__events-list">
+                            <article class="event">
+                                <div class="swiper__container">
+                                    <div class="swiper swiper--1">
+                                        <div class="swiper-wrapper">
+                                            <div class="swiper-slide">
+                                                <picture>
+                                                    <source srcset="img/events/1/1.webp">
+                                                    <img src="img/events/1/1.jpg" class="swiper__image" alt="">
+                                                </picture>
+                                            </div>
+                                            <div class="swiper-slide">
+                                                <picture>
+                                                    <source srcset="img/events/1/2.webp">
+                                                    <img src="img/events/1/2.jpg" class="swiper__image" alt="">
+                                                </picture>
+                                            </div>
+                                            <div class="swiper-slide">
+                                                <picture>
+                                                    <source srcset="img/events/1/3.webp">
+                                                    <img src="img/events/1/3.jpg" class="swiper__image" alt="">
+                                                </picture>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <button type="button" class="swiper__btn-prev swiper__btn-prev--1">
+                                        <img src="img/icons/chevron-left-swiper.svg"
+                                            class="swiper__btn-icon swiper__btn-icon--prev" alt="">
+                                    </button>
+                                    <button type="button" class="swiper__btn-next swiper__btn-next--1">
+                                        <img src="img/icons/chevron-left-swiper.svg"
+                                            class="swiper__btn-icon swiper__btn-icon--next" alt="">
+                                    </button>
+                                </div>
+
+                                <div class="event__body">
+
+                                    <span class="event__caption">
+                                        04.02.2023
+                                    </span>
+
+                                    <div class="event__desc">
+                                        <h3 class="event__title">LEVEL — BIRTHDAY PARTY</h3>
+                                        <p class="event__text">
+                                            это кальянный бар, который стремится изменить представление людей об обычном
+                                            кальяне. Наша специализация заключается в создании индивидуальных смесей и
+                                            ароматов, отходя от обыденных стандартов того, что предлагалось в прошлом.
+                                            Все наши ароматы поставляются из разных уголков, что позволяет всем клиентам
+                                            каждый раз получать по-настоящему уникальный и манящий дым.
+                                        </p>
+                                    </div>
+                                </div>
+                            </article>
+                            <article class="event">
+                                <div class="swiper__container">
+                                    <div class="swiper swiper--2">
+                                        <div class="swiper-wrapper">
+                                            <div class="swiper-slide">
+                                                <picture>
+                                                    <source srcset="img/events/2/1.webp">
+                                                    <img src="img/events/2/1.jpg" class="swiper__image" alt="">
+                                                </picture>
+                                            </div>
+                                            <div class="swiper-slide">
+                                                <picture>
+                                                    <source srcset="img/events/2/2.webp">
+                                                    <img src="img/events/2/2.jpg" class="swiper__image" alt="">
+                                                </picture>
+                                            </div>
+                                            <div class="swiper-slide">
+                                                <picture>
+                                                    <source srcset="img/events/2/3.webp">
+                                                    <img src="img/events/2/3.jpg" class="swiper__image" alt="">
+                                                </picture>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <button type="button" class="swiper__btn-prev swiper__btn-prev--2">
+                                        <img src="img/icons/chevron-left-swiper.svg"
+                                            class="swiper__btn-icon swiper__btn-icon--prev" alt="">
+                                    </button>
+                                    <button type="button" class="swiper__btn-next swiper__btn-next--2">
+                                        <img src="img/icons/chevron-left-swiper.svg"
+                                            class="swiper__btn-icon swiper__btn-icon--next" alt="">
+                                    </button>
+                                </div>
+
+                                <div class="event__body">
+
+                                    <span class="event__caption">
+                                        04.02.2023
+                                    </span>
+
+                                    <div class="event__desc">
+                                        <h3 class="event__title">LEVEL — BIRTHDAY PARTY</h3>
+                                        <p class="event__text">
+                                            это кальянный бар, который стремится изменить представление людей об обычном
+                                            кальяне. Наша специализация заключается в создании индивидуальных смесей и
+                                            ароматов, отходя от обыденных стандартов того, что предлагалось в прошлом.
+                                            Все наши ароматы поставляются из разных уголков, что позволяет всем клиентам
+                                            каждый раз получать по-настоящему уникальный и манящий дым.
+                                        </p>
+                                    </div>
+                                </div>
+                            </article>
+                            <article class="event">
+                                <div class="swiper__container">
+                                    <div class="swiper swiper--3">
+                                        <div class="swiper-wrapper">
+                                            <div class="swiper-slide">
+                                                <picture>
+                                                    <source srcset="img/events/3/1.webp">
+                                                    <img src="img/events/3/1.jpg" class="swiper__image" alt="">
+                                                </picture>
+                                            </div>
+                                            <div class="swiper-slide">
+                                                <picture>
+                                                    <source srcset="img/events/3/2.webp">
+                                                    <img src="img/events/3/2.jpg" class="swiper__image" alt="">
+                                                </picture>
+                                            </div>
+                                            <div class="swiper-slide">
+                                                <picture>
+                                                    <source srcset="img/events/3/3.webp">
+                                                    <img src="img/events/3/3.jpg" class="swiper__image" alt="">
+                                                </picture>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <button type="button" class="swiper__btn-prev swiper__btn-prev--3">
+                                        <img src="img/icons/chevron-left-swiper.svg"
+                                            class="swiper__btn-icon swiper__btn-icon--prev" alt="">
+                                    </button>
+                                    <button type="button" class="swiper__btn-next swiper__btn-next--3">
+                                        <img src="img/icons/chevron-left-swiper.svg"
+                                            class="swiper__btn-icon swiper__btn-icon--next" alt="">
+                                    </button>
+                                </div>
+
+                                <div class="event__body">
+
+                                    <span class="event__caption">
+                                        04.02.2023
+                                    </span>
+
+                                    <div class="event__desc">
+                                        <h3 class="event__title">LEVEL — BIRTHDAY PARTY</h3>
+                                        <p class="event__text">
+                                            это кальянный бар, который стремится изменить представление людей об обычном
+                                            кальяне. Наша специализация заключается в создании индивидуальных смесей и
+                                            ароматов, отходя от обыденных стандартов того, что предлагалось в прошлом.
+                                            Все наши ароматы поставляются из разных уголков, что позволяет всем клиентам
+                                            каждый раз получать по-настоящему уникальный и манящий дым.
+                                        </p>
+                                    </div>
+                                </div>
+                            </article>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section> <!-- end of section showcase-->
+
+    </main>
+    <!-- footer include -->
+    <footer class="footer">
+    <div class="container">
+        <div class="footer__top">
+            <div class="footer__about">
+                <a href="#" class="logo footer__logo">
+                    LEVEL
+                </a>
+
+                <div class="socials footer__socials">
+                    <ul class="socials__list">
+                        <li class="socials__item">
+                            <a href="#" class="socials__link">
+                                <svg width="20" height="13" viewBox="0 0 20 13" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path class="icon"
+                                        d="M10.8984 12.1717C4.51671 12.1717 0.876764 7.79672 0.725098 0.516723H3.92176C4.02676 5.86006 6.38337 8.12339 8.25004 8.59006V0.516723H11.2602V5.12506C13.1035 4.92672 15.0399 2.82672 15.6933 0.516723H18.7033C18.2016 3.36339 16.1016 5.46339 14.6083 6.32672C16.1016 7.02672 18.4934 8.85839 19.4034 12.1717H16.09C15.3783 9.95506 13.6052 8.24006 11.2602 8.00672V12.1717H10.8984Z"
+                                        fill="white" />
+                                </svg>
+                            </a>
+                        </li>
+                        <li class="socials__item">
+                            <a href="#" class="socials__link">
+                                <svg width="18" height="16" viewBox="0 0 18 16" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path class="icon"
+                                        d="M1.10355 6.96804C1.10355 6.96804 9.06452 3.45574 11.8255 2.21897C12.8839 1.72431 16.4733 0.141238 16.4733 0.141238C16.4733 0.141238 18.1299 -0.551294 17.9918 1.13064C17.9458 1.82324 17.5777 4.2472 17.2095 6.8691C16.6573 10.5793 16.0591 14.6358 16.0591 14.6358C16.0591 14.6358 15.9671 15.7736 15.1848 15.9715C14.4025 16.1694 13.114 15.279 12.8839 15.081C12.6998 14.9327 9.43263 12.7065 8.2362 11.6182C7.91406 11.3214 7.54595 10.7278 8.28218 10.0352C9.93882 8.40267 11.9175 6.37444 13.114 5.08824C13.6662 4.49457 14.2184 3.10944 11.9175 4.79137C8.65036 7.2154 5.42916 9.49101 5.42916 9.49101C5.42916 9.49101 4.69286 9.98567 3.31237 9.54044C1.93181 9.09527 0.321209 8.5016 0.321209 8.5016C0.321209 8.5016 -0.783137 7.75957 1.10355 6.96804Z"
+                                        fill="white" />
+                                </svg>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="contacts contacts--footer">
+                <div class="contacts__col">
+                    <span class="contacts__col-caption">
+                        Симферополь
+                    </span>
+                    <address class="address">
+                        <p class="address__text">ул. Пушкина, 9</p>
+                        <a href="tel:+79785000050" class="address__text">+7 (978) 500-00-50</a>
+                    </address>
+                </div>
+
+                <div class="contacts__col">
+                    <span class="contacts__col-caption">
+                        Сотрудничество
+                    </span>
+
+                    <address class="address">
+                        <p>У вас есть предложение для нас?</p>
+                        <a href="mailto:level@mail.ru" class="address__text">level@mail.ru</a>
+                    </address>
+                </div>
+
+                <div class="contacts__col">
+                    <span class="contacts__col-caption">
+                        Режим работы
+                    </span>
+
+                    <address class="address">
+                        <span class="address_text">пн-вс 14:00 - 03:00</span>
+                    </address>
+                </div>
+                <div class="contacts__col">
+                    <span class="contacts__col-caption">
+                        Вакансии в LEVEL
+                    </span>
+
+                    <address class="address">
+                        <a href="#" class="address__text link">Присоединяйтесь к нашей команде</a>
+                    </address>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer__bottom">
+            <span class="footer__copyright">
+                © 2022 LEVEL
+            </span>
+        </div>
+    </div>
+</footer>
+</body>
+
+</html>

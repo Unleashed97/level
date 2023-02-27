@@ -1,0 +1,65 @@
+.swiper {
+    max-width: 100%;
+    width: 100%;
+
+    margin-bottom: 30px;
+}
+
+.swiper__container {
+    position: relative;
+}
+
+.swiper-slide {
+    max-width: 100%;
+}
+
+.swiper__image {
+    display: block;
+    max-width: 100%;
+    height: auto;
+
+    border-radius: 6px;
+}
+
+.swiper__btn-next,
+.swiper__btn-prev {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 1;
+
+    width: 64px;
+    height: 64px;
+
+    padding: 0;
+
+    background-color: rgba($colors-secondary, 0.1);
+    border-radius: 50%;
+    border: 0;
+    cursor: pointer;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    transition: background-color 0.3s linear;
+
+    &:hover {
+        background-color: rgba($colors-secondary, 0.3);
+    }
+
+    @media (max-width: $lg) {
+        display: none;
+    }
+}
+
+.swiper__btn-prev {
+    left: -32px;
+}
+.swiper__btn-next {
+    right: -32px;
+
+    .swiper__btn-icon {
+        transform: rotate(180deg);
+    }
+}

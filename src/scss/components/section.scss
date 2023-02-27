@@ -441,6 +441,29 @@
         }
     }
 
+    &--events {
+        .section__events-list {
+            display: grid;
+            grid-template-columns: 100%;
+            gap: 112px;
+
+            margin-bottom: 80px;
+
+            @media (max-width: $md) {
+                grid-template-columns: 100%;
+                gap: 80px;
+            }
+            @media (max-width: $sm) {
+                grid-template-columns: 100%;
+                gap: 48px;
+            }
+        }
+
+        .event__text {
+            max-width: 890px;
+        }
+    }
+
     &__title {
         margin-bottom: 40px;
 
