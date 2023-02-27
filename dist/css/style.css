@@ -902,6 +902,9 @@ p {
     right: -17px;
   }
 }
+.section--dym-cultury {
+  padding-top: 80px;
+}
 .section--reservation {
   overflow: hidden;
 }
