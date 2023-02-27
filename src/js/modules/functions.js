@@ -6,6 +6,15 @@ export const handleBurger = () => {
     burgerBtn.addEventListener('click', () => {
         burgerBtn.classList.toggle('active')
         header.classList.toggle('active')
+        document.body.classList.toggle('fixed')
+    })
+
+    window.addEventListener('resize', (e) => {
+        if (screen.width >= 833) {
+            burgerBtn.classList.remove('active')
+            header.classList.remove('active')
+            document.body.classList.remove('fixed')
+        }
     })
 }
 

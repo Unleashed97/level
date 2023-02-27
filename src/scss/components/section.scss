@@ -342,6 +342,7 @@
     }
 
     &--reservation {
+        overflow: hidden;
         .section__inner {
             min-height: auto;
             padding-top: 107px;

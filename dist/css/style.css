@@ -428,6 +428,7 @@ p {
   display: none;
   flex-direction: column;
   padding: 114px 16px 16px;
+  overflow: auto;
   background-color: #161519;
   animation: mob-menu-apper backwards 0.3s;
 }
@@ -900,6 +901,9 @@ p {
     bottom: -27px;
     right: -17px;
   }
+}
+.section--reservation {
+  overflow: hidden;
 }
 .section--reservation .section__inner {
   min-height: auto;
