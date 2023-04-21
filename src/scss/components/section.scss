@@ -4,7 +4,7 @@
         background-size: cover;
         background-repeat: no-repeat;
 
-        background-color: $colors-primary;
+        background-color: $colors-text-secondary;
 
         .section__inner {
             position: relative;
@@ -98,12 +98,12 @@
 
     &--showcase-main {
         background-image: url('../img/section/showcase/main/bg.jpg');
-        background-color: $colors-primary;
+        background-color: $colors-text-secondary;
     }
 
     &--showcase-dym-cultury {
         background-image: url('../img/section/showcase/dym-cultury/bg.png');
-        background-color: $colors-primary;
+        background-color: $colors-text-secondary;
         background-position: bottom right 125px;
         background-size: auto;
 
@@ -204,7 +204,7 @@
     &--common {
         padding-bottom: 88px;
 
-        background-color: $colors-primary;
+        background-color: $colors-text-secondary;
 
         @media (max-width: $lg) {
             padding-bottom: 80px;
@@ -466,6 +466,52 @@
 
         .event__text {
             max-width: 890px;
+        }
+    }
+
+    &--menu {
+        padding-bottom: 100px;
+        background-color: $colors-primary;
+
+        .section__title-wrapper {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            gap: 0;
+
+            margin-bottom: 100px;
+            padding-top: 200px;
+
+            max-width: 916px;
+
+            @media (max-width: $sm) {
+                margin-bottom: 80px;
+            }
+
+            .section__text {
+                font-size: 2.2rem;
+                color: $colors-text-light;
+                line-height: normal;
+
+                @media (max-width: $sm) {
+                    font-size: 2rem;
+                }
+            }
+        }
+
+        .section__title {
+            margin-bottom: 15px;
+
+            font-size: 6.5rem;
+            font-weight: 600;
+
+            @media (max-width: $lg) {
+                font-size: 5rem;
+            }
+            @media (max-width: $md) {
+                font-size: 4rem;
+                margin-bottom: 30px;
+            }
         }
     }
 

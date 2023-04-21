@@ -7,6 +7,10 @@
         max-width: 848px;
     }
 
+    &--lg {
+        max-width: 1660px;
+    }
+
     @media (max-width: $sm) {
         padding: 0 16px;
     }

@@ -85,4 +85,23 @@
     &--close {
         padding: 7px;
     }
+
+    &--menu {
+        padding: 20px 30px;
+
+        font-size: 2.2rem;
+        font-weight: 600;
+
+        border-radius: 10px;
+        background-color: transparent;
+        color: rgba($colors-text-primary, 0.6);
+
+        transition: 0.3s linear;
+
+        &:hover,
+        &.active {
+            background-color: #f7cf9a;
+            color: $colors-text-secondary;
+        }
+    }
 }

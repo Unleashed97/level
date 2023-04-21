@@ -13,6 +13,9 @@
 
     background-color: rgba(#111013, 0.94);
 
+    &--success {
+    }
+
     &.active {
         display: flex;
     }
@@ -63,6 +66,10 @@
             font-size: 2rem;
             margin-bottom: 32px;
         }
+    }
+
+    &__text {
+        font-size: 1.6rem;
     }
 
     .btn {

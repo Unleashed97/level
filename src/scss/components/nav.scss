@@ -44,4 +44,14 @@
             font-size: 2rem;
         }
     }
+
+    &--menu {
+        margin-bottom: 50px;
+
+        overflow: scroll;
+
+        @media (max-width: $md-target) {
+            display: block;
+        }
+    }
 }
