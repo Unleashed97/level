@@ -47,11 +47,37 @@
 
     &--menu {
         margin-bottom: 50px;
+        padding: 0 30px;
 
-        overflow: scroll;
+        overflow-x: auto;
 
         @media (max-width: $md-target) {
             display: block;
         }
+        @media (max-width: $sm) {
+            padding: 0 16px;
+        }
+
+        .nav__list {
+            gap: 20px;
+        }
     }
 }
+
+// .nav__menu-wrapper {
+//     padding: 0 30px;
+//     position: relative;
+
+//     &:after {
+//         content: '';
+//         position: fixed;
+//         top: 0;
+//         right: 0;
+
+//         display: block;
+//         width: 30px;
+//         height: 100%;
+
+//         background: linear-gradient(rgba(#f7cf9a, 0.1), rgba(#f7cf9a, 0.5));
+//     }
+// }
