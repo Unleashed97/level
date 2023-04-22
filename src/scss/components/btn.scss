@@ -98,6 +98,10 @@
 
         transition: 0.3s linear;
 
+        @media (max-width: $sm) {
+            font-size: 1.8rem;
+        }
+
         &:hover,
         &.active {
             background-color: #f7cf9a;

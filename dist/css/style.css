@@ -1212,6 +1212,11 @@ p {
   color: rgba(255, 255, 255, 0.6);
   transition: 0.3s linear;
 }
+@media (max-width: 576px) {
+  .btn--menu {
+    font-size: 1.8rem;
+  }
+}
 .btn--menu:hover, .btn--menu.active {
   background-color: #f7cf9a;
   color: #111013;
@@ -1766,6 +1771,11 @@ p {
   border-radius: 20px;
   overflow: hidden;
 }
+@media (max-width: 768px) {
+  .card--menu .card__image {
+    margin-bottom: 20px;
+  }
+}
 .card--menu .card__title {
   margin-bottom: 15px;
   font-size: 3rem;
@@ -1779,7 +1789,8 @@ p {
 }
 @media (max-width: 576px) {
   .card--menu .card__title {
-    font-size: 2rem;
+    margin-bottom: 8px;
+    font-size: 1.8rem;
     line-height: 1.2;
   }
 }
@@ -1791,6 +1802,10 @@ p {
 @media (max-width: 768px) {
   .card--menu .card__desc {
     margin-bottom: 20px;
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
   }
 }
 @media (max-width: 576px) {
@@ -1820,7 +1835,7 @@ p {
   font-size: 3rem;
   color: #969696;
 }
-@media (max-width: 992px) {
+@media (max-width: 1400px) {
   .card--menu .card__portion {
     font-size: 2rem;
   }
@@ -1834,19 +1849,14 @@ p {
   font-size: 4rem;
   font-weight: 700;
 }
-@media (max-width: 992px) {
+@media (max-width: 1400px) {
   .card--menu .card__price {
-    font-size: 3rem;
+    font-size: 2.5rem;
   }
 }
 @media (max-width: 576px) {
   .card--menu .card__price {
     font-size: 2rem;
-  }
-}
-@media (max-width: 400px) {
-  .card--menu .card__price {
-    font-size: 2.5rem;
   }
 }
 
@@ -1855,7 +1865,7 @@ p {
   grid-template-columns: repeat(3, 1fr);
   gap: 20px;
 }
-@media (max-width: 1660px) {
+@media (max-width: 992px) {
   .menu {
     grid-template-columns: repeat(2, 1fr);
   }
@@ -1863,10 +1873,5 @@ p {
 @media (max-width: 992px) {
   .menu {
     grid-template-columns: repeat(2, 1fr);
-  }
-}
-@media (max-width: 360px) {
-  .menu {
-    grid-template-columns: 1fr;
   }
 }

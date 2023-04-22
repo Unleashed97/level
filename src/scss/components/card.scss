@@ -24,6 +24,10 @@
             border-radius: 20px;
 
             overflow: hidden;
+
+            @media (max-width: $md) {
+                margin-bottom: 20px;
+            }
         }
 
         .card__title {
@@ -38,7 +42,9 @@
             }
 
             @media (max-width: $sm) {
-                font-size: 2rem;
+                margin-bottom: 8px;
+
+                font-size: 1.8rem;
                 line-height: 1.2;
             }
         }
@@ -51,6 +57,11 @@
 
             @media (max-width: $md) {
                 margin-bottom: 20px;
+
+                overflow: hidden;
+                display: -webkit-box;
+                -webkit-line-clamp: 3;
+                -webkit-box-orient: vertical;
             }
             @media (max-width: $sm) {
                 line-height: 1.4;
@@ -78,7 +89,7 @@
             font-size: 3rem;
             color: $colors-text-light;
 
-            @media (max-width: $lg) {
+            @media (max-width: 1400px) {
                 font-size: 2rem;
             }
 
@@ -90,15 +101,12 @@
             font-size: 4rem;
             font-weight: 700;
 
-            @media (max-width: $lg) {
-                font-size: 3rem;
+            @media (max-width: 1400px) {
+                font-size: 2.5rem;
             }
 
             @media (max-width: $sm) {
                 font-size: 2rem;
-            }
-            @media (max-width: 400px) {
-                font-size: 2.5rem;
             }
         }
     }
